@@ -1,0 +1,29 @@
+def combine_sets(set1, set2):
+    return set(set1) | set(set2)
+
+
+def intersect_sets(set1, set2):
+    return set(set1) & set(set2)
+
+
+def difference_sets(set1, set2):
+    return set(set1) - set(set2)
+
+
+r1 = (("Іванов", "Математика", 5), (("Петров", "Фізика", 3)))
+print(r1)
+
+r2 = (("Іванов", "Математика", 5), (("Іванов", "Фізика", 4)))
+print(r2)
+print()
+
+r3 = combine_sets(r1, r2)
+print(r3)
+print()
+
+r4 = intersect_sets(r1, r2)
+print(r4)
+print()
+
+r5 = difference_sets(r1, r2)
+print(r5)
